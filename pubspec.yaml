@@ -34,21 +34,16 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
   provider: ^6.0.5
   flutter_shake_animated: ^0.0.5
   speech_to_text: ^6.1.1
   rive: ^0.11.4
   flutter_svg: ^2.0.5
-  universal_html: ^2.2.1
-  snackbar: ^1.0.2
   simple_internet_checker: ^0.0.2
   geolocator: ^9.0.2
   geocoding: ^2.1.0
   animated_text_kit: ^4.2.2
-  location: ^5.0.0
   google_maps_flutter: ^2.2.5
-  flutter_polyline_points: ^1.0.0
   in_app_update: ^4.0.1
   syncfusion_flutter_charts: ^22.1.38
   # firebase_core: ^2.9.0
@@ -71,6 +66,7 @@ dependencies:
   mypay_flutter: ^1.0.1
   pdf: ^3.10.4
   google_sign_in: ^6.1.4
+  dependency_validator: ^3.2.2
 
 dev_dependencies:
   flutter_test:
