@@ -10,6 +10,7 @@ import 'package:my_widgets/screens/rive_animation.dart';
 import 'package:my_widgets/screens/riverpod_family_screen.dart';
 import 'package:my_widgets/screens/riverpod_screen.dart';
 import 'package:my_widgets/screens/rotation_animation_screen.dart';
+import 'package:my_widgets/screens/slide_screen.dart';
 import 'package:my_widgets/screens/smartphone_screen.dart';
 import 'package:my_widgets/screens/speech_to_text.dart';
 import 'package:my_widgets/screens/tic_tac_toe_screen.dart';
@@ -546,6 +547,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                 MaterialPageRoute(
                                   builder: (context) =>
                                       const InteractiveWidget(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Slider Widget",
+                          iconData: Icons.slideshow,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const SlideScreen(),
                                 ));
                           }),
                     ],

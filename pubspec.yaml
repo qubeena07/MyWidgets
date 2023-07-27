@@ -67,6 +67,7 @@ dependencies:
   pdf: ^3.10.4
   google_sign_in: ^6.1.4
   dependency_validator: ^3.2.2
+  slide_to_act: ^2.0.1
 
 dev_dependencies:
   flutter_test:
