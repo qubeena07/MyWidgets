@@ -68,6 +68,7 @@ dependencies:
   google_sign_in: ^6.1.4
   dependency_validator: ^3.2.2
   slide_to_act: ^2.0.1
+  timeline_tile: ^2.0.0
 
 dev_dependencies:
   flutter_test:

@@ -14,6 +14,7 @@ import 'package:my_widgets/screens/slide_screen.dart';
 import 'package:my_widgets/screens/smartphone_screen.dart';
 import 'package:my_widgets/screens/speech_to_text.dart';
 import 'package:my_widgets/screens/tic_tac_toe_screen.dart';
+import 'package:my_widgets/screens/timeline_screen.dart';
 import 'package:my_widgets/screens/url_launcher_screen.dart';
 import 'package:my_widgets/screens/wave_custom_painter_screen.dart';
 
@@ -559,34 +560,20 @@ class _HomeScreenState extends State<HomeScreen> {
                                   builder: (context) => const SlideScreen(),
                                 ));
                           }),
+                      HomeCardWidget(
+                          title: "Timeline Widget",
+                          iconData: Icons.timeline_outlined,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const TimelineScreen(),
+                                ));
+                          }),
                     ],
                   ),
                 ),
-              )
-
-              //         // ElevatedButton(
-              //         //   child: const Text("Request permission"),
-              //         //   onPressed: () async {
-              //         //     final perm = await html.window.navigator.permissions
-              //         //         ?.query({"name": "camera"});
-              //         //     if (perm?.state == "denied") {
-              //         //       // Scaffold.of(context).
-              //         //       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-              //         //         content: Text("Oops! Camera access denied!"),
-              //         //         backgroundColor: Colors.orangeAccent,
-              //         //       ));
-              //         //       return;
-              //         //     }
-              //         //     final stream =
-              //         //         await html.window.navigator.getUserMedia(video: true);
-              //         //     // ...
-              //         //   },
-              //         // ),
-
-              //
-              //
-
-              ),
+              )),
         ),
       ),
     );
