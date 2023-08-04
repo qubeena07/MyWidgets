@@ -69,6 +69,9 @@ dependencies:
   dependency_validator: ^3.2.2
   slide_to_act: ^2.0.1
   timeline_tile: ^2.0.0
+  flutter_carousel_slider: ^1.1.0
+  wifi_scan: ^0.4.0+1
+
 
 dev_dependencies:
   flutter_test:

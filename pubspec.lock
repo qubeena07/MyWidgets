@@ -270,6 +270,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
+  flutter_carousel_slider:
+    dependency: "direct main"
+    description:
+      name: flutter_carousel_slider
+      sha256: "4cd0691b98ebbf8b40361e01779b3a211002c963d3709630e775fba699d3b821"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
   flutter_draggable_gridview:
     dependency: "direct main"
     description:
@@ -1165,6 +1173,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  wifi_scan:
+    dependency: "direct main"
+    description:
+      name: wifi_scan
+      sha256: aba3aa28f45b817356048022d0dde0c8b2e4054ed0151489bfc3103f7197d19d
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.0+1"
   xml:
     dependency: transitive
     description:

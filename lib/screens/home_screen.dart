@@ -17,6 +17,7 @@ import 'package:my_widgets/screens/tic_tac_toe_screen.dart';
 import 'package:my_widgets/screens/timeline_screen.dart';
 import 'package:my_widgets/screens/url_launcher_screen.dart';
 import 'package:my_widgets/screens/wave_custom_painter_screen.dart';
+import 'package:my_widgets/screens/wifi_scan.dart';
 
 import '../api/login_api.dart';
 import '../repo/demo_screen.dart';
@@ -33,6 +34,7 @@ import 'charts_screen.dart';
 import 'circular_progress_screen.dart';
 import 'clock_screen.dart';
 import 'cp_background_screen.dart';
+import 'cube_swipe.dart';
 import 'custom_painter_screen.dart';
 import 'draggable_screen.dart';
 import 'drawing_screen.dart';
@@ -568,6 +570,26 @@ class _HomeScreenState extends State<HomeScreen> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => const TimelineScreen(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Cube Swipe",
+                          iconData: Icons.swipe,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const CubeSwipe(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Wifi Scan ",
+                          iconData: Icons.wifi,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const WifiScan(), 
                                 ));
                           }),
                     ],
