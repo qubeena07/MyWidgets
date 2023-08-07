@@ -47,6 +47,7 @@ import 'lazy_loading_screen.dart';
 import 'list_view_animation_screen.dart';
 import 'location_screen.dart';
 import 'location_tracking_screen.dart';
+import 'modern_wheel_scroll.dart';
 import 'my_pay_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -589,7 +590,18 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => const WifiScan(), 
+                                  builder: (context) => const WifiScan(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Modern Wheel Scroll",
+                          iconData: Icons.two_wheeler,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const ModernWheelScroll(),
                                 ));
                           }),
                     ],
