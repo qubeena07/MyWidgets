@@ -15,9 +15,9 @@ class ModernWheelScroll extends StatefulWidget {
 
 class _ModernWheelScrollState extends State<ModernWheelScroll> {
   late FixedExtentScrollController _controller;
-  String min = "";
-  String hour = "";
-  String amPm = "";
+  String min = "00";
+  String hour = "00";
+  String amPm = "AM";
 
   @override
   void initState() {

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shake_animated/flutter_shake_animated.dart';
 import 'package:my_widgets/screens/interactive_screen.dart';
 import 'package:my_widgets/screens/pdf/invoice_page.dart';
+import 'package:my_widgets/screens/pedometer_screen.dart';
 import 'package:my_widgets/screens/pos_screen.dart';
 import 'package:my_widgets/screens/rive_animation.dart';
 import 'package:my_widgets/screens/riverpod_family_screen.dart';
@@ -13,6 +14,7 @@ import 'package:my_widgets/screens/rotation_animation_screen.dart';
 import 'package:my_widgets/screens/slide_screen.dart';
 import 'package:my_widgets/screens/smartphone_screen.dart';
 import 'package:my_widgets/screens/speech_to_text.dart';
+import 'package:my_widgets/screens/street_view_panaroma.dart';
 import 'package:my_widgets/screens/tic_tac_toe_screen.dart';
 import 'package:my_widgets/screens/timeline_screen.dart';
 import 'package:my_widgets/screens/url_launcher_screen.dart';
@@ -39,6 +41,7 @@ import 'custom_painter_screen.dart';
 import 'draggable_screen.dart';
 import 'drawing_screen.dart';
 import 'flutter_web_screen.dart';
+import 'generate_qr_screen.dart';
 import 'hero_screen.dart';
 import 'in_app_update_screen.dart';
 import 'internet_checker_screen.dart';
@@ -49,6 +52,7 @@ import 'location_screen.dart';
 import 'location_tracking_screen.dart';
 import 'modern_wheel_scroll.dart';
 import 'my_pay_screen.dart';
+import 'paypal_payment_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -81,6 +85,19 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
     );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    initPlatformState();
+  }
+
+  Future<void> initPlatformState() async {
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) return;
   }
 
   @override
@@ -602,6 +619,48 @@ class _HomeScreenState extends State<HomeScreen> {
                                 MaterialPageRoute(
                                   builder: (context) =>
                                       const ModernWheelScroll(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Street view panaroma",
+                          iconData: Icons.two_wheeler,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const StreetViewPanoramaInitDemo(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Pedometer",
+                          iconData: Icons.two_wheeler,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const PedometerScreen(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "QR download",
+                          iconData: Icons.download,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const GenerateScreen(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Paypal Payment",
+                          iconData: Icons.download,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const PaypalPaymentScreen(),
                                 ));
                           }),
                     ],

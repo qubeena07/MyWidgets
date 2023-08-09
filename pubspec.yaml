@@ -71,6 +71,12 @@ dependencies:
   timeline_tile: ^2.0.0
   flutter_carousel_slider: ^1.1.0
   wifi_scan: ^0.4.0+1
+  flutter_google_street_view: ^3.1.4
+  pedometer: ^4.0.1
+  qr_flutter: ^4.1.0
+  path_provider: ^2.1.0
+  location: ^5.0.2+1
+  flutter_paypal: ^0.2.0
 
 
 dev_dependencies:
