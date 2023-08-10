@@ -77,6 +77,8 @@ dependencies:
   path_provider: ^2.1.0
   location: ^5.0.2+1
   flutter_paypal: ^0.2.0
+  flutter_stripe: ^9.3.0
+  http: ^0.13.6
 
 
 dev_dependencies:

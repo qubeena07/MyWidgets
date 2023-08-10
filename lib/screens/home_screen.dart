@@ -15,6 +15,7 @@ import 'package:my_widgets/screens/slide_screen.dart';
 import 'package:my_widgets/screens/smartphone_screen.dart';
 import 'package:my_widgets/screens/speech_to_text.dart';
 import 'package:my_widgets/screens/street_view_panaroma.dart';
+import 'package:my_widgets/screens/stripe_screen.dart';
 import 'package:my_widgets/screens/tic_tac_toe_screen.dart';
 import 'package:my_widgets/screens/timeline_screen.dart';
 import 'package:my_widgets/screens/url_launcher_screen.dart';
@@ -661,6 +662,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                 MaterialPageRoute(
                                   builder: (context) =>
                                       const PaypalPaymentScreen(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Stripe Payment",
+                          iconData: Icons.payment,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const StripeScreen(),
                                 ));
                           }),
                     ],
