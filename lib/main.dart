@@ -11,7 +11,7 @@ import 'package:responsive_framework/responsive_framework.dart';
 import 'screens/home_screen.dart';
 
 void main() async {
-  Stripe.publishableKey = "your_key";
+  Stripe.publishableKey = "your key";
   WidgetsFlutterBinding.ensureInitialized();
   await AppScreenPrivacyService().enableScreenPrivacy();
 
@@ -72,20 +72,3 @@ class MyApp extends StatelessWidget {
     });
   }
 }
-
-
-
-//   Map<String, dynamic> map = {
-//     'name':'hello',
-//     'na2':'hello',
-//     'name3':'hello',
-//     'name4':'hello',
-//     'name5':'hello',
-//   };
-  
-//   List listValu = map.keys.toList();
-//   List listvall = map.values.toList();
-//   String a =listValu[2].toString();
-//   String b = listvall[2].toString();
-//   print(a);
-//   print(b);

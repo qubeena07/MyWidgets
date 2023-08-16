@@ -59,7 +59,7 @@ dependencies:
   image_picker: ^1.0.0
   printing: ^5.11.0
   flutter_riverpod: ^2.3.6
-  dio: ^5.1.2
+  dio: ^5.3.2
   flutter_draggable_gridview: ^0.0.8
   responsive_framework: ^1.0.0
   flutter_barcode_scanner: ^2.0.0
@@ -79,6 +79,13 @@ dependencies:
   flutter_paypal: ^0.2.0
   flutter_stripe: ^9.3.0
   http: ^0.13.6
+  flutter_xlider: ^3.5.0
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  flutter_lints: ^2.0.2
+  build_runner: ^2.4.6
+  freezed: ^2.4.2
+  json_serializable: ^6.7.1
 
 
 dev_dependencies:
@@ -90,7 +97,6 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../model/product_model.dart';
 
-
-
 class NetworkApi extends ChangeNotifier {
   Dio dioClient = Dio();
 

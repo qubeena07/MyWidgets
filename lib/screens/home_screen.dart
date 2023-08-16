@@ -27,6 +27,7 @@ import '../repo/demo_screen.dart';
 import '../widgets/download_button.dart';
 import '../widgets/home_card_widget.dart';
 import 'aegis_widget.dart';
+import 'age_slider.dart';
 import 'analog_clock_screen.dart';
 import 'animated_text_screen.dart';
 import 'background_rive_screen.dart';
@@ -43,6 +44,7 @@ import 'draggable_screen.dart';
 import 'drawing_screen.dart';
 import 'flutter_web_screen.dart';
 import 'generate_qr_screen.dart';
+import 'gesture/gesture_one.dart';
 import 'hero_screen.dart';
 import 'in_app_update_screen.dart';
 import 'internet_checker_screen.dart';
@@ -671,8 +673,27 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) =>
-                                      const StripeScreen(),
+                                  builder: (context) => const StripeScreen(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Age Slider",
+                          iconData: Icons.slideshow_rounded,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const AgeSlider(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Container Gesture",
+                          iconData: Icons.slideshow_rounded,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const GestureOne(),
                                 ));
                           }),
                     ],
