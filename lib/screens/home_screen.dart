@@ -34,6 +34,7 @@ import 'background_rive_screen.dart';
 import 'barcode_generator_screen.dart';
 import 'barcode_scanner.dart';
 import 'bluetooth_screen.dart';
+import 'card_swiper.dart';
 import 'charts_screen.dart';
 import 'circular_progress_screen.dart';
 import 'clock_screen.dart';
@@ -694,6 +695,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => const GestureOne(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Swipe Card ",
+                          iconData: Icons.swipe,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const SwipeCardExample(),
                                 ));
                           }),
                     ],

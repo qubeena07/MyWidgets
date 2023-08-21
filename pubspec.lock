@@ -366,6 +366,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
+  flutter_card_swiper:
+    dependency: "direct main"
+    description:
+      name: flutter_card_swiper
+      sha256: bd4a63d512ce3992b1950f6c46efeff4a0890e117e36c0fa7101b578bd0fdf3a
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.0"
   flutter_carousel_slider:
     dependency: "direct main"
     description:
@@ -478,6 +486,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.7"
+  flutter_swipable:
+    dependency: "direct main"
+    description:
+      name: flutter_swipable
+      sha256: a341e0a7ea7a0d3a6efc753e0d0608462e702b01562cb3b0768c7d5fbb86d033
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
