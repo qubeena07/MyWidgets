@@ -30,6 +30,7 @@ import 'aegis_widget.dart';
 import 'age_slider.dart';
 import 'analog_clock_screen.dart';
 import 'animated_text_screen.dart';
+import 'azlist_screen.dart';
 import 'background_rive_screen.dart';
 import 'barcode_generator_screen.dart';
 import 'barcode_scanner.dart';
@@ -706,6 +707,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                 MaterialPageRoute(
                                   builder: (context) =>
                                       const SwipeCardExample(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "A-Z LIST ",
+                          iconData: Icons.list,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const AZlistScreen(),
                                 ));
                           }),
                     ],
