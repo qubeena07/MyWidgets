@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext context, Widget? child) {
         return ConnectivityScreen(
           child: MaterialApp(
+            theme: ThemeData(useMaterial3: true),
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             builder: (context, child) => ResponsiveBreakpoints(

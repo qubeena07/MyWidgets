@@ -45,13 +45,13 @@ class HomeCardWidget extends StatelessWidget {
             children: [
               Icon(
                 iconData,
-                size: 30,
+                size: 25,
               ),
               Text(
                 title,
                 textAlign: TextAlign.center,
                 style:
-                    const TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                    const TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
               ),
             ],
           ),

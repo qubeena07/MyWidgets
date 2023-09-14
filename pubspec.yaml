@@ -89,6 +89,8 @@ dependencies:
   flutter_swipable: ^1.2.1
   flutter_card_swiper: ^6.0.0
   azlistview: ^2.0.0
+  animations: ^2.0.8
+  flutter_jailbreak_detection: ^1.10.0
 
 
 dev_dependencies:

@@ -4,6 +4,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_shake_animated/flutter_shake_animated.dart';
 import 'package:my_widgets/screens/interactive_screen.dart';
+import 'package:my_widgets/screens/open_container_transform.dart';
 import 'package:my_widgets/screens/pdf/invoice_page.dart';
 import 'package:my_widgets/screens/pedometer_screen.dart';
 import 'package:my_widgets/screens/pos_screen.dart';
@@ -44,6 +45,8 @@ import 'cube_swipe.dart';
 import 'custom_painter_screen.dart';
 import 'draggable_screen.dart';
 import 'drawing_screen.dart';
+import 'fade_scale_transition.dart';
+import 'fade_through_transition.dart';
 import 'flutter_web_screen.dart';
 import 'generate_qr_screen.dart';
 import 'gesture/gesture_one.dart';
@@ -51,6 +54,7 @@ import 'hero_screen.dart';
 import 'in_app_update_screen.dart';
 import 'internet_checker_screen.dart';
 import 'ios_home_screen.dart';
+import 'jail_break_detection.dart';
 import 'lazy_loading_screen.dart';
 import 'list_view_animation_screen.dart';
 import 'location_screen.dart';
@@ -58,6 +62,7 @@ import 'location_tracking_screen.dart';
 import 'modern_wheel_scroll.dart';
 import 'my_pay_screen.dart';
 import 'paypal_payment_screen.dart';
+import 'shared_axis.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -717,6 +722,61 @@ class _HomeScreenState extends State<HomeScreen> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => const AZlistScreen(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Container Transform ",
+                          iconData: Icons.check_box_outline_blank_outlined,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const OpenContainerTransform(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Fade through transition ",
+                          iconData: Icons.face_rounded,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const FadeThroughTransitionDemo(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Fade scale transition ",
+                          iconData: Icons.scale,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const FadeScaleTransitionDemo(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Shared axis transition ",
+                          iconData: Icons.scale,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const SharedAxisTransitionDemo(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Jail Break Detection",
+                          iconData: Icons.breakfast_dining,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const JailBreakDetection(),
                                 ));
                           }),
                     ],
