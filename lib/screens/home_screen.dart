@@ -21,6 +21,7 @@ import 'package:my_widgets/screens/tic_tac_toe_screen.dart';
 import 'package:my_widgets/screens/timeline_screen.dart';
 import 'package:my_widgets/screens/url_launcher_screen.dart';
 import 'package:my_widgets/screens/wave_custom_painter_screen.dart';
+import 'package:my_widgets/screens/webview_screen.dart';
 import 'package:my_widgets/screens/wifi_scan.dart';
 
 import '../api/login_api.dart';
@@ -777,6 +778,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                 MaterialPageRoute(
                                   builder: (context) =>
                                       const JailBreakDetection(),
+                                ));
+                          }),
+                      HomeCardWidget(
+                          title: "Web view",
+                          iconData: Icons.breakfast_dining,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const WebviewScreen(),
                                 ));
                           }),
                     ],
